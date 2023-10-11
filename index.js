@@ -4,7 +4,7 @@ app.all("/", (req, res) => {
 	console.log("Just got a request!");
 	res.send(`<html>
 	<head>
-		<script type="text/javascript" src="http://projects8-dev-ed.develop.my.salesforce.com/support/api/59.0/lightning/opencti_min.js"></script>
+		<script type="text/javascript" src="./script.js"></script>
 		<script type="text/javascript">
 			var callback = function (response) {
 				if (response.success) {

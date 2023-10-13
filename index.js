@@ -14,7 +14,7 @@ app.all("/", (req, res) => {
             console.log(Object.keys(response.returnValue)[1]);
             window.location = 'https://projects8-dev-ed.develop.lightning.force.com/lightning/r/Account/'+
             Object.keys(response.returnValue)[1]
-            +'/view"
+            +'/view'
          } else { 
             console.error('Something went wrong! Errors:', response.errors);
          }

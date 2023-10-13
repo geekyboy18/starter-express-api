@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 !(function (e) {
 	function t(i) {
 		if (a[i]) return a[i].exports;
@@ -211,7 +210,6 @@
 		};
 	},
 ]);
-=======
 !(function (e) {
 	function t(i) {
 		if (a[i]) return a[i].exports;
@@ -424,4 +422,3 @@
 		};
 	},
 ]);
->>>>>>> 14b47eb8e69528e8dcd76b671509252730e9acdf

@@ -35,12 +35,13 @@ app.all("/", (req, res) => {
             console.error('Something went wrong! Errors:', response.errors);
          }
       	};
-       	function screenPop() {
+       	
+        function screenPop() {
                 sforce.opencti.screenPop({
                 type: sforce.opencti.SCREENPOP_TYPE.NEW_RECORD_MODAL, 
-                params: {entityName: ”Account”}, 
+                params: {entityName: "Account"}, 
                 callback: callbackForPopUp  });
-        	}
+        }
     </script>
     </head>
     <body>

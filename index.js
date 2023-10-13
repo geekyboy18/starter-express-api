@@ -9,13 +9,18 @@ app.all("/", (req, res) => {
 			var callback = function (response) {
 				if (response.success) {
 					console.log("API method call executed successfully! returnValue:", response.returnValue);
+
 				} else {
 					console.error("Something went wrong! Errors:", response.errors);
 				}
 			};
 			function searchAndScreenPop() {
 				//Invokes API method
-				sforce.opencti.searchAndScreenPop({ searchParams: "Acme", queryParams: "Key1=value1&Key2=value2", callType: sforce.opencti.CALL_TYPE.INBOUND, deferred: false, callback: callback });
+				sforce.opencti.searchAndScreenPop({ searchParams: "Acme", 
+                queryParams: "Key1=value1&Key2=value2", 
+                callType: sforce.opencti.CALL_TYPE.INBOUND, 
+                deferred: false, 
+                callback: callback });
 			}
 		</script>
 	</head>

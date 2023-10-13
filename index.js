@@ -27,10 +27,25 @@ app.all("/", (req, res) => {
                     callback : callback 
                 });
         }
+
+        var callbackForPopUp = function(response) {
+         if (response.success) {
+            console.log('API method call executed successfully! returnValue:', response.returnValue);
+         } else { 
+            console.error('Something went wrong! Errors:', response.errors);
+         }
+      	};
+       	function screenPop() {
+                sforce.opencti.screenPop({
+                type: sforce.opencti.SCREENPOP_TYPE.NEW_RECORD_MODAL, 
+                params: {scope:”Account”}, 
+                callback: callback  });
+        	}
     </script>
     </head>
     <body>
         <button onclick="searchAndScreenPop();">searchAndScreenPop</button>
+        <button onclick="screenPop();">ScreenPop</button>
     </body>
     </html>`
 	);

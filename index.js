@@ -38,8 +38,8 @@ app.all("/", (req, res) => {
        	function screenPop() {
                 sforce.opencti.screenPop({
                 type: sforce.opencti.SCREENPOP_TYPE.NEW_RECORD_MODAL, 
-                params: {scope:”Account”}, 
-                callback: callback  });
+                params: {entityName: ”Account”}, 
+                callback: callbackForPopUp  });
         	}
     </script>
     </head>

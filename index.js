@@ -19,9 +19,9 @@ app.all("/", (req, res) => {
                 //Invokes API method
                 // queryParams : 'Key1=value1&Key2=value2',
                 sforce.opencti.searchAndScreenPop({ 
-                    searchParams : 'Burlington Textiles Corp of America',
+                    // searchParams : 'Burlington Textiles Corp of America',
                     callType : sforce.opencti.CALL_TYPE.INBOUND,
-                    deferred: false,
+                    // deferred: false,
                     callback : callback 
                 });
         }

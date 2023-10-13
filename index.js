@@ -28,20 +28,20 @@ app.all("/", (req, res) => {
                 });
         }
 
-        // var callbackForPopUp = function(response) {
-        //  if (response.success) {
-        //     console.log('API method call executed successfully! returnValue:', response.returnValue);
-        //  } else { 
-        //     console.error('Something went wrong! Errors:', response.errors);
-        //  }
-      	// };
+        var callbackForPopUp = function(response) {
+         if (response.success) {
+            console.log('API method call executed successfully! returnValue:', response.returnValue);
+         } else { 
+            console.error('Something went wrong! Errors:', response.errors);
+         }
+      	};
        	
-        // function screenPop() {
-        //         sforce.opencti.screenPop({
-        //         type: sforce.opencti.SCREENPOP_TYPE.NEW_RECORD_MODAL, 
-        //         params: {entityName: "Account"}, 
-        //         callback: callbackForPopUp  });
-        // }
+        function screenPop() {
+                sforce.opencti.screenPop({
+                type: sforce.opencti.SCREENPOP_TYPE.NEW_RECORD_MODAL, 
+                params: {entityName: "Account"}, 
+                callback: callbackForPopUp  });
+        }
     </script>
     </head>
     <body>

@@ -6,14 +6,14 @@ app.all("/", (req, res) => {
 	res.send(
 		`<html>
     <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XJJZ0SSKND"></script>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZXGFDJ4DC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-XJJZ0SSKND');
+  gtag('config', 'G-QZXGFDJ4DC');
 </script>
    <script type="text/javascript" src="./script.js"></script>
    <script type="text/javascript">
